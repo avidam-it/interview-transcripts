@@ -5,14 +5,15 @@ import re
 # -------------------------
 # CONFIG
 # -------------------------
+import os
 
-CLIENT_ID = "YOUR_CLIENT_ID"
-CLIENT_SECRET = "YOUR_CLIENT_SECRET"
-USER_AGENT = "mba-interview-scraper"
+CLIENT_ID = os.environ["REDDIT_CLIENT_ID"]
+CLIENT_SECRET = os.environ["REDDIT_CLIENT_SECRET"]
+USER_AGENT = os.environ["REDDIT_USER_AGENT"]
 
-COLLEGE = "ISB"
+COLLEGE = "IIFT"
 SEARCH_QUERY = f"{COLLEGE} interview experience"
-SUBREDDITS = ["MBA", "gradadmissions", "Indian_Academia", "GMAT"]
+SUBREDDITS = ["MBA", "gradadmissions", "Indian_Academia", "GMAT", "CATPreparation"]
 
 POST_LIMIT = 200
 
